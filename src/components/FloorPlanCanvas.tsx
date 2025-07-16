@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useStore } from '../store/useStore';
 
+
+
 export default function FloorPlanCanvas() {
   const rooms = useStore((state) => state.rooms);
   const [selectedRoomId, setSelectedRoomId] = useState<string | null>(null);
