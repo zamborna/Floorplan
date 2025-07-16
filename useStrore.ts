@@ -57,4 +57,11 @@ export const useStore = create<State>((set) => ({
 
     set({ rooms });
   },
+  updateRoom: (id, updates) =>
+    set((state) => ({
+      rooms: state.rooms.map((room) =>
+        room.id === id ? { ...room, ...updates } : room
+      ),
+    })),
+  
 }));
