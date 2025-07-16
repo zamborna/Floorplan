@@ -37,6 +37,7 @@ export default function FloorPlanCanvas() {
   };
 
   return (
+    <div id="floorplan-container" style={{ display: 'inline-block' }}>
     <svg
       width={1200}
       height={800}
@@ -95,5 +96,6 @@ export default function FloorPlanCanvas() {
         </g>
       ))}
     </svg>
+    </div>
   );
 }
